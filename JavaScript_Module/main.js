@@ -34,3 +34,31 @@ let currentYear = new Date().getFullYear();
 let yearOfBirth = currentYear - userAge;
 
 alert(`Hello, ${userName}! You were born in the year ${yearOfBirth}.`);
+
+//Conditional Logic Practice. Write a script to check if a number is positive, negative, or zero and print an appropriate message to the console.
+let number = -3;
+
+if (number > 0) {
+    console.log(number + " is positive");
+}
+
+else if (number < 0) {
+    console.log(number + " is negative");
+}
+
+else {
+    console.log(number + " is zero");
+}
+
+//Looping Through Numbers. Use a for loop to print numbers 1 through 10 to the console.
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// Basic Function Creation. Write a function that takes two numbers as parameters and returns their sum.
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+let result = sum(24, 100);
+console.log(result);
