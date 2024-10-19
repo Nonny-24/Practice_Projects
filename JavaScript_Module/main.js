@@ -67,4 +67,8 @@ console.log(result);
 let paragraph = document.getElementById('greeting');
 paragraph.textContent = 'Hello, DOM!';
 
-//
+//Event Handling Task.
+const button = document.getElementById('clickButton');
+button.addEventListener('click', function() {
+    button.textContent = 'Clicked!';
+});
