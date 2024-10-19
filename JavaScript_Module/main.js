@@ -62,3 +62,9 @@ function sum(num1, num2) {
 
 let result = sum(24, 100);
 console.log(result);
+
+//DOM Manipulation Task.
+let paragraph = document.getElementById('greeting');
+paragraph.textContent = 'Hello, DOM!';
+
+//
