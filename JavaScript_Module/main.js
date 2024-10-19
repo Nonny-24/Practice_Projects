@@ -63,12 +63,26 @@ function sum(num1, num2) {
 let result = sum(24, 100);
 console.log(result);
 
-//DOM Manipulation Task.
+//DOM Manipulation Task. Select a paragraph element by its ID and change its text content to “Hello, DOM!”.
 let paragraph = document.getElementById('greeting');
 paragraph.textContent = 'Hello, DOM!';
 
-//Event Handling Task.
+//Event Handling Task. Add an event listener to a button that changes the button’s text to “Clicked!” when it is clicked.
 const button = document.getElementById('clickButton');
 button.addEventListener('click', function() {
     button.textContent = 'Clicked!';
+});
+
+//Hover Effect Task. Create a hover effect on list items that changes their background color when hovered over.
+let listItems = document.querySelectorAll('.hover-item');
+
+listItems.forEach(function(item) {
+    
+    item.addEventListener("mouseover", function() {
+        item.style.backgroundColor = "green";  
+    });
+
+    item.addEventListener("mouseout", function() {
+        item.style.backgroundColor = "";  
+    });
 });
